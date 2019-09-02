@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/et_nombre"
-            android:hint="Nombre Completo"
+            android:hint="Nombre"
             android:inputType="textPersonName"
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="20dp"
@@ -46,8 +46,26 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/et_direccion"
-            android:hint="Dirección"
+            android:id="@+id/et_apellido"
+            android:hint="Apellido"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/entrada"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="#ccc"
+            android:textColor="#ccc"/>
+        />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_usuario"
+            android:hint="Usuario"
             android:inputType="text"
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="20dp"
@@ -63,41 +81,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/et_telefono"
-            android:hint="Teléfono"
-            android:inputType="phone"
-            android:layout_marginBottom="15dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/entrada"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:textColorHint="#ccc"
-            android:textColor="#ccc"/>
-        />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/id_correo"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:layout_marginBottom="15dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/entrada"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:textColorHint="#ccc"
-            android:textColor="#ccc"/>
-        />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/id_contrasena"
+            android:id="@+id/et_contrasena"
             android:hint="Contraseña"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="20dp"
@@ -109,7 +93,7 @@
             android:paddingBottom="10dp"
             android:textColorHint="#ccc"
             android:textColor="#ccc"
-            android:inputType="text"/>
+            android:inputType="textPassword"/>
 
         <Button
             android:layout_width="match_parent"
@@ -123,6 +107,7 @@
             android:text="Registrarme"
             android:textColor="#fff"
             android:textSize="16dp"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"

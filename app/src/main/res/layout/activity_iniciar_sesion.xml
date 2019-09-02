@@ -60,21 +60,13 @@
             android:textColorHint="#ccc"
             android:textColor="#ccc"
             android:inputType="textPassword"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#fff"
-            android:gravity="end"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginBottom="30dp"
-            android:text="Olvidaste tu contraseña"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="30dp"
+            android:layout_marginTop="25dp"
             android:id="@+id/iniciar_sesion"
             android:elevation="5dp"
             android:background="@drawable/btn_fondo_color"

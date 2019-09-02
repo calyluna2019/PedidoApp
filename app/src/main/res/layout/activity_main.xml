@@ -22,8 +22,8 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="120dp"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
             android:layout_marginBottom="70dp"
             android:src="@drawable/logo_napo"
             android:padding="10dp"
@@ -41,12 +41,12 @@
             android:textSize="16dp"
             android:text="Iniciar Sesion"/>
 
-        <Button
+        <com.facebook.login.widget.LoginButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:id="@+id/iniciar_facebook"
+            android:id="@+id/login_button"
             android:background="@drawable/btn_facebook"
             android:textColor="#fff"
             android:elevation="5dp"
