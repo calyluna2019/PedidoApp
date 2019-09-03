@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         ir_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Menu_comida.class));
+                startActivity(new Intent(MainActivity.this, Iniciar_sesion.class));
                 finish();
             }
         });
