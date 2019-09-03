@@ -1,15 +1,19 @@
 package com.pruebaapp;
 
-public class Pizzas {
+import java.io.Serializable;
+
+public class Pizzas implements Serializable {
 
     private String pizza;
     private String tamano;
-    private int precio;
+    private double precio;
+    private int cantidad;
 
-    public Pizzas(String pizza, String tamano, int precio) {
+    public Pizzas(String pizza, String tamano, double precio, int cantidad) {
         this.pizza = pizza;
         this.tamano = tamano;
         this.precio = precio;
+        this.cantidad = cantidad;
     }
 
     public String getPizza() {
@@ -28,11 +32,19 @@ public class Pizzas {
         this.tamano = tamano;
     }
 
-    public int getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
     public void setPrecio(int precio) {
         this.precio = precio;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
     }
 }

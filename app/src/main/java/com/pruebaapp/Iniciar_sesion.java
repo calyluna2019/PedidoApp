@@ -27,7 +27,7 @@ public class Iniciar_sesion extends AppCompatActivity {
         iniciar_sesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Iniciar_sesion.this, Menu_comida.class));
+                //startActivity(new Intent(Iniciar_sesion.this, Registrar_usuario.class));
             }
         });
     }

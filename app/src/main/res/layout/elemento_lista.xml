@@ -28,8 +28,8 @@
         android:id="@+id/tv_precio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="320dp"
         android:text="precio"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="120dp" />
+        android:textSize="25dp" />
+
 </LinearLayout>
