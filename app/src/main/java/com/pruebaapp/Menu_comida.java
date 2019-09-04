@@ -4,9 +4,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -69,7 +71,30 @@ public class Menu_comida extends AppCompatActivity {
 
         listaPizzas.setAdapter(pizzasAdapter);
 
+        //Todo revisar codigo para llegar a Activity_detalleCompra
+        listaPizzas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(Menu_comida.this, Activity_detalleCompra.class);
+                intent.putExtra("pizzas", arrayPizzas.get(i));
+                startActivity(new Intent(Menu_comida.this, Activity_detalleCompra.class));
+            }
+        });
+
     }
+
+    /*@Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        //super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode==100){
+            if (resultCode==101){
+                Pizzas resultPizza = (Pizzas)data.getSerializableExtra("returnPizza");
+
+                compraPizzas.add(resultPizza);
+
+            }
+        }
+    }*/
 
     public class PizzasAdapter extends ArrayAdapter<Pizzas> {
 
@@ -94,7 +119,7 @@ public class Menu_comida extends AppCompatActivity {
 
             pizza.setText(miPizza.getPizza());
             tamano.setText(miPizza.getTamano());
-            precio.setText(Double.toString(miPizza.getPrecio()));
+            precio.setText("$"+Integer.toString(miPizza.getPrecio()));
 
             return view;
         }

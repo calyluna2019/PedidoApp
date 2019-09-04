@@ -6,10 +6,10 @@ public class Pizzas implements Serializable {
 
     private String pizza;
     private String tamano;
-    private double precio;
+    private int precio;
     private int cantidad;
 
-    public Pizzas(String pizza, String tamano, double precio, int cantidad) {
+    public Pizzas(String pizza, String tamano, int precio, int cantidad) {
         this.pizza = pizza;
         this.tamano = tamano;
         this.precio = precio;
@@ -32,7 +32,7 @@ public class Pizzas implements Serializable {
         this.tamano = tamano;
     }
 
-    public double getPrecio() {
+    public int getPrecio() {
         return precio;
     }
 

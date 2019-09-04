@@ -1,9 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Activity_detalleCompra">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tv_compPizza"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="27dp"
+        android:text="Pizza"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_compPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="301dp"
+        android:layout_marginTop="32dp"
+        android:text="Precio"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tv_compCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="168dp"
+        android:text="Unidades"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_tamano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="279dp"
+        android:text="tamaño"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_nota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="342dp"
+        android:text="Observaciones"
+        android:textSize="15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="249dp" />
+
+    <TextView
+        android:id="@+id/tv_numero"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="68dp"
+        android:text="cantidad"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_resta"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="166dp"
+        android:layout_marginEnd="101dp"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btn_suma"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="167dp"
+        android:layout_marginEnd="9dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/btn_agragarPedido"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="163dp"
+        android:text="agregar pedido" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="283dp"
+        android:layout_marginEnd="43dp"
+        android:text="tamano" />
+</RelativeLayout>
